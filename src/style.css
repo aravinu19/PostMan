@@ -1,0 +1,169 @@
+html{
+    margin: -8px;
+    overflow-x: hidden;
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+
+
+.mainDiv{
+    width: 100%;
+}
+.options{
+    padding: 10px;
+    background-color: rgb(92, 86, 84);
+}
+
+nav{
+    width: 100%;
+}
+.right{
+    float: right;
+}
+
+.left{
+    display: inline-block;
+}
+.navLarge,.navSmall{
+    cursor: pointer;
+    border: 0;
+    padding: 7px;
+    border-radius: 3px;
+}
+
+.orange{
+    background-color: rgb(255, 123, 0);
+}
+
+.inputs input{
+    padding: 10px;
+    margin-top: 5px;
+}
+
+.inputs{
+    display: inline-block;
+}
+.inputs button{
+    border: 0;
+    padding: 10px;
+}
+
+select{
+    border: 1px solid rgb(165, 159, 159);
+    background-color:rgb(134, 128, 126);
+    color: white;
+    padding: 6px;
+    border-radius: 3px;
+}
+
+.send{
+    cursor: pointer;
+    background-color: rgb(41, 128, 209);
+    border-radius: 3px;
+}
+
+.params{
+    border: 1px solid rgb(165, 159, 159);
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.request{
+    text-align: center;
+    width: 100%;
+    margin: 10px 0 0 0;
+}
+
+.save{
+    border: 1px solid rgb(165, 159, 159);
+    cursor: pointer;
+    border-radius: 3px;
+    padding: 10px;
+}
+
+.urlInput{
+    width: 500px;
+    border: 1px solid rgb(165, 159, 159);
+    background-color:rgb(226, 223, 223);
+    border-radius: 3px;
+    /* box-shadow: 1px 4px 5px 1px rgb(143, 129, 129) */
+    /* box-shadow: 1px 1px 8px 1px rgb(177, 163, 163);     */
+
+}
+
+.navLarge:hover,.navSmall:hover{
+    background-color: rgb(255, 123, 0);
+    color: white;
+}
+
+.params:hover{
+    background-color: grey;
+    color: white;
+}
+
+.send:hover{
+    background-color: rgb(31, 94, 150);
+    color: white;
+}
+
+
+.tableInputKey,.tableInputValue,.tableInputDesp {
+    width: 97%;
+    padding: 4px;
+}
+
+.tableInputDesp{
+    width: 90%;
+}
+
+
+table input[type="button"]{
+    border: 1px solid rgb(165, 159, 159) ;
+    margin-left: 7px;
+    background-color: white;
+}
+
+table input[type="button"]:hover{
+    background-color: rgb(129, 118, 118);
+    color: white;
+}
+
+.headers p{
+    margin-left: 44%;
+}
+
+table th{
+    border: 1px solid #ddd;
+    padding: 8px;
+    font-size: 13px;
+}
+
+
+.bodyDiv{
+    text-align: center;
+}
+
+#body{
+    margin-top: 30px;
+    width: 90%;
+    height: 300px;
+}
+
+
+@media (max-width:784px){
+    html{
+        position:absolute;
+        overflow-x: scroll;
+    }
+    .right{
+       float: none;
+       margin-top: -28px;
+       margin-left: 55%;
+    }
+}
+@media (max-width:703px){
+    .save{
+        margin-top: 20px;
+    }
+}

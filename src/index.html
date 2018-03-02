@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>PostMan Replica</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+  </head>
+  <body>
+    <div class="mainDiv">
+      <nav>
+          <div class="options">
+            <div class="left">
+              <button class="navLarge orange">New</button>
+              <button class="navLarge">Runner</button>
+              <button class="navLarge">Import</button>
+            </div>
+            <div class="right">
+              <button class="navSmall">API</button>
+              <button class="navSmall">BELL</button>
+              <button id="settings" class="navSmall">SETTINGS</button>
+              <button class="navSmall">LIKE</button>
+            </div>
+          </div>
+          <div class="request">
+            <select id="method">
+              <option value="GET">GET</option>
+              <option value="POST">POST</option>
+              <option value="PUT">PUT</option>
+              <option value="DELETE">DELETE</option>
+              <option value="HEAD">HEAD</option>
+              <option value="PATCH">PATCH</option>
+            </select>
+          <div class="inputs">
+            <input id="urlInput" class="urlInput" type="text" placeholder="Enter request URL">
+            <input class="params" type="button" value="Params">
+            <button id="send" class="send">Send</button>
+            <button class="save">Save</button>
+          </div>
+          </div>
+      </nav>
+      <div class="headers">
+        <br/>
+        <br/>
+
+        <p><b>HEADERS</b></p>
+        <table style="width:100%" id="myTable">
+          <tr>
+              <th>Key</th>
+              <th>Value</th>
+              <th>Description</th>
+          </tr>
+          <tr>
+              <td><input class="tableInputKey" type="text" placeholder="key" onchange	=""></th>
+                <!-- line modified to make it work as intended myFunction() is removed from onchange-->
+              <td><input class="tableInputValue" type="text" placeholder="value" onchange=""></th>
+                <!-- line modified to make it work as intended myFunction() is removed from onchange-->
+              <td><input class="tableInputDesp" type="text" placeholder="description" onchange="myFunction()"></th>
+          </tr>
+        </table>
+      </div>
+      <div class="bodyDiv">
+        <textarea class="output_from" type="text" name="body" id="body"></textarea>
+      </div>
+    </div>
+   <script src="script.js"></script>
+  </body>
+</html>

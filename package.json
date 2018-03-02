@@ -1,0 +1,22 @@
+{
+  "name": "PostMan",
+  "version": "1.0.0",
+  "description": "API testing alternative for postman",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "package-mac": "electron-packager . --overwrite --platform=darwin --arch=x64 --prune=true --out=release-builds",
+    "package-win": "electron-packager . PostMan-Replica --overwrite --asar=true --platform=win32 --arch=ia32 --prune=true --out=release-builds --version-string.CompanyName=CE --version-string.FileDescription=CE --version-string.ProductName=\"PostMan Replica\"",
+    "package-linux": "electron-packager . electron-tutorial-app --overwrite --asar=true --platform=linux --arch=x64 --prune=true --out=release-builds"
+  },
+  "author": "Aravi",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "1.8.2",
+    "electron-winstaller": "^2.6.4"
+  },
+  "dependencies": {
+    "axios": "^0.17.1",
+    "electron-toaster": "^2.0.4"
+  }
+}

@@ -16,7 +16,8 @@
     "electron-winstaller": "^2.6.4"
   },
   "dependencies": {
-    "axios": "^0.17.1",
+    "axios": "^0.18.0",
+    "electron": "^3.0.4",
     "electron-toaster": "^2.0.4"
   }
 }

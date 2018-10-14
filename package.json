@@ -12,11 +12,13 @@
   "author": "Aravi",
   "license": "ISC",
   "devDependencies": {
-    "electron": "1.8.2",
-    "electron-winstaller": "^2.6.4"
+    "electron": "3.0.4",
+    "electron-winstaller": "^2.7.0"
   },
   "dependencies": {
     "axios": "^0.18.0",
+    "cryptiles": "^4.1.2",
+    "deep-extend": "^0.5.1",
     "electron": "^3.0.4",
     "electron-toaster": "^2.0.4"
   }
